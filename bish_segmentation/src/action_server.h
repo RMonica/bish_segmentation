@@ -1,0 +1,7 @@
+#ifndef BISH_SEG_ACTION_SERVER_H
+#define BISH_SEG_ACTION_SERVER_H
+
+#define PARAM_NAME_ACTION_NAME    "action_name"
+#define PARAM_DEFAULT_ACTION_NAME "bish_segment"
+
+#endif // BISH_SEG_ACTION_SERVER_H

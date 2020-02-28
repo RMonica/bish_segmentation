@@ -1,0 +1,29 @@
+<launch>
+
+  <node pkg="bish_segmentation_dataset_creation" type="bish_segmentation_dataset_creation" name="bish_segmentation_dataset_creation" output="screen" clear_params="true" required="true" >
+
+    <param name="labeled_pointclouds_path" type="string" value="$(find bish_segmentation_dataset_creation)/data/labeled_pointclouds/" />
+    <param name="labeled_images_path" type="string" value="$(find bish_segmentation_dataset_creation)/data/labeled_images/" />
+    <param name="prototypes_path" type="string" value="$(find bish_segmentation_dataset_creation)/data/prototypes/" />
+
+    <param name="labeled_segment_number" type="int" value="5" />
+
+    <param name="point_radius" type="double" value="0.005" />
+    <param name="normal_k_search_count" type="int" value="10" />
+
+    <param name="image_height" type="int" value="256" />
+    <param name="image_width" type="int" value="256" />
+
+    <param name="range_min" type="double" value="0.0" />
+    <param name="range_max" type="double" value="5.0" />
+
+    <param name="theta_x" type="double" value="0.0" />
+    <param name="theta_y" type="double" value="45.0" />
+    <param name="theta_z" type="double" value="45.0" />
+
+    <param name="prototypes_count" type="int" value="2" />
+
+  </node>
+  
+</launch>
+

@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>bish_segmentation_dataset_creation</name>
+  <version>0.0.0</version>
+  <description>The bish_segmentation_dataset_creation package</description>
+
+  <maintainer email="davide.piccinini2@studenti.unipr.it">Davide Piccinini</maintainer>
+
+  <license>TODO</license>
+
+
+  <buildtool_depend>catkin</buildtool_depend>
+  
+  <build_depend>bish_segmentation</build_depend>
+  <build_export_depend>bish_segmentation</build_export_depend>
+  <exec_depend>bish_segmentation</exec_depend>
+  
+  <build_depend>eigen_conversions</build_depend>
+  <build_export_depend>eigen_conversions</build_export_depend>
+  <exec_depend>eigen_conversions</exec_depend>
+  
+  <build_depend>init_fake_opengl_context</build_depend>
+  <build_export_depend>init_fake_opengl_context</build_export_depend>
+  <exec_depend>init_fake_opengl_context</exec_depend>
+  
+  <build_depend>roscpp</build_depend>
+  <build_export_depend>roscpp</build_export_depend>
+  <exec_depend>roscpp</exec_depend>
+  
+</package>

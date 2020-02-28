@@ -1,0 +1,25 @@
+<launch>
+
+  <node pkg="bish_segmentation" type="action_server" name="bish_segmentation" output="screen" clear_params="true">
+    
+    <param name="labeled_images_path" type="string" value="$(find bish_segmentation)/data/labeled_images/" />
+    <param name="prototypes_path" type="string" value="$(find bish_segmentation)/data/prototypes/" />
+    <param name="test_pointclouds_path" type="string" value="$(find bish_segmentation)/data/test_pointclouds/" />
+    <param name="test_images_path" type="string" value="$(find bish_segmentation)/data/test_images/" />
+    <param name="results_path" type="string" value="$(find bish_segmentation)/data/results/" />
+    <param name="results_pointclouds_path" type="string" value="$(find bish_segmentation)/data/results_pointclouds/" />
+    
+    <param name="test_segment_number" type="int" value="10" />
+  	
+    <param name="image_height" type="int" value="256" />
+    <param name="image_width" type="int" value="256" />
+  	
+    <param name="range_min" type="double" value="0.0" />
+    <param name="range_max" type="double" value="5.0" />
+  	
+    <param name="theta_x" type="double" value="0.0" />
+    <param name="theta_y" type="double" value="45.0" />
+    <param name="theta_z" type="double" value="45.0" />
+  </node>
+
+</launch>
